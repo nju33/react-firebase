@@ -7,7 +7,8 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "dev":
+      "NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "tsc -p tsconfig.build.json",
     "prepare": "yarn build"
   },
