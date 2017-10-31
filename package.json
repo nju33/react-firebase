@@ -1,6 +1,6 @@
 {
   "name": "@nju33/react-firebase",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/firebase.js",
   "types": "./dist/index.d.ts",
   "publishConfig": {
