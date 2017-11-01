@@ -1,7 +1,16 @@
 import * as React from 'react';
+import * as PropTypes from 'prop-types';
 import * as firebase from 'firebase/app';
 
 export class Firebase extends React.Component<Firebase.Config, Firebase.State> {
+  static childContextTypes = {
+    firebase: PropTypes.object,
+  };
+
+  public getChildContext() {
+    return {firebase};
+  }
+
   constructor(props: Firebase.Config) {
     super(props);
     this.state = {
