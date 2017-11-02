@@ -4,12 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BabiliWebpackPlugin = require('babili-webpack-plugin');
 
 module.exports = {
-  target: 'web',
+  target: 'node',
   devtool: 'source-map',
   entry: __dirname + '/src/components/firebase',
   output: {
     path: __dirname + '/dist',
     filename: 'firebase.js',
+    library: 'Firebase',
+    libraryTarget: 'commonjs',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.json', '.js', '.vue'],
