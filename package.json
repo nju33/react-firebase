@@ -1,16 +1,14 @@
 {
   "name": "@nju33/react-firebase",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./dist/firebase.js",
   "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "dev":
-      "NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
-    "build":
-      "webpack --progress --config webpack.config.build.js && tsc -p tsconfig.build.json",
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack --progress --config webpack.config.build.js && tsc -p tsconfig.build.json",
     "prepare": "yarn build"
   },
   "keywords": [],
