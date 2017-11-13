@@ -18,7 +18,12 @@ export class Firebase extends React.Component<Firebase.Config, Firebase.State> {
     };
   }
 
-  public async componentWillMount() {
+  public async componentDidMount() {
+    if (firebase.apps.length > 0) {
+      this.setState({inited: true});
+      return;
+    }
+
     const config: Firebase.Config = {
       apiKey: this.props.apiKey,
     };
